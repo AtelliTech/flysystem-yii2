@@ -1,0 +1,22 @@
+<?php
+
+namespace App;
+
+use Yii;
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__) . '/vendor/yiisoft/yii2/Yii.php';
+
+$config = [
+    'class' => 'AtelliTech\Yii2\FlysystemAdapterSftpV3',
+    'host' => '{host}',
+    'username' => '{username}',
+    'password' => '{passwd}',
+    'rootPath' => '{rootPath}'
+];
+
+$fs = Yii::createObject($config);
+$listing = $fs->listContents('');
+foreach($listing as $item) {
+    echo "\nPath: " . $item->path();
+}
