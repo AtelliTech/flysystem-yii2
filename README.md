@@ -2,12 +2,14 @@
 It's an adapter of file system for Yii2 that integrating with league/flysystem. But now only supports local, in memory and SFTP and will support AWS S3 or others adpater are developing ongoing.
 
 ## Supports
-- Local
+- Local   
 Please see [https://flysystem.thephpleague.com/docs/adapter/local/](https://flysystem.thephpleague.com/docs/adapter/local/)
-- InMemory
+- InMemory   
 Please see [https://flysystem.thephpleague.com/docs/adapter/in-memory/](https://flysystem.thephpleague.com/docs/adapter/in-memory/)
-- SFTPv3
+- SFTPv3   
 Please see [https://flysystem.thephpleague.com/docs/adapter/sftp-v3/](https://flysystem.thephpleague.com/docs/adapter/sftp-v3/)
+- AWS S3/Async AWS S3   
+Please see [https://packagist.org/packages/atellitech/flysystem-s3-yii2](https://packagist.org/packages/atellitech/flysystem-s3-yii2)
 
 ## Getting Start
 ### Requirements
